@@ -107,5 +107,10 @@ namespace quick_screen_recorder
 			if (this.Left + this.Width > maxWidth) this.Left = maxWidth - this.Width;
 			if (this.Top + this.Height > maxHeight) this.Top = maxHeight - this.Height;
 		}
-	}
+
+        private void AreaForm_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
