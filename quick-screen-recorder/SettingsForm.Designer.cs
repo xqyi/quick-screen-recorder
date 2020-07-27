@@ -51,9 +51,9 @@
             this.licenseLabel.Location = new System.Drawing.Point(6, 96);
             this.licenseLabel.Margin = new System.Windows.Forms.Padding(3);
             this.licenseLabel.Name = "licenseLabel";
-            this.licenseLabel.Size = new System.Drawing.Size(120, 15);
+            this.licenseLabel.Size = new System.Drawing.Size(93, 15);
             this.licenseLabel.TabIndex = 38;
-            this.licenseLabel.Text = "* App restart required";
+            this.licenseLabel.Text = "* 重新启动生效";
             // 
             // darkThemeRadio
             // 
@@ -62,7 +62,7 @@
             this.darkThemeRadio.Name = "darkThemeRadio";
             this.darkThemeRadio.Size = new System.Drawing.Size(49, 19);
             this.darkThemeRadio.TabIndex = 2;
-            this.darkThemeRadio.Text = "Dark";
+            this.darkThemeRadio.Text = "暗色";
             this.darkThemeRadio.UseVisualStyleBackColor = true;
             this.darkThemeRadio.CheckedChanged += new System.EventHandler(this.darkThemeRadio_CheckedChanged);
             // 
@@ -73,7 +73,7 @@
             this.lightThemeRadio.Name = "lightThemeRadio";
             this.lightThemeRadio.Size = new System.Drawing.Size(52, 19);
             this.lightThemeRadio.TabIndex = 1;
-            this.lightThemeRadio.Text = "Light";
+            this.lightThemeRadio.Text = "亮色";
             this.lightThemeRadio.UseVisualStyleBackColor = true;
             this.lightThemeRadio.CheckedChanged += new System.EventHandler(this.lightThemeRadio_CheckedChanged);
             // 
@@ -86,7 +86,7 @@
             this.systemThemeRadio.Size = new System.Drawing.Size(123, 19);
             this.systemThemeRadio.TabIndex = 0;
             this.systemThemeRadio.TabStop = true;
-            this.systemThemeRadio.Text = "Use system setting";
+            this.systemThemeRadio.Text = "使用系统设置";
             this.systemThemeRadio.UseVisualStyleBackColor = true;
             this.systemThemeRadio.CheckedChanged += new System.EventHandler(this.systemThemeRadio_CheckedChanged);
             // 
@@ -125,6 +125,7 @@
             this.settingsTabs.Size = new System.Drawing.Size(256, 145);
             this.settingsTabs.TabIndex = 13;
             this.settingsTabs.TextColor = System.Drawing.Color.Black;
+            this.settingsTabs.Visible = false;
             // 
             // themePage
             // 
@@ -139,7 +140,7 @@
             this.themePage.Padding = new System.Windows.Forms.Padding(3);
             this.themePage.Size = new System.Drawing.Size(248, 121);
             this.themePage.TabIndex = 0;
-            this.themePage.Text = "Theme";
+            this.themePage.Text = "主题";
             // 
             // audioPage
             // 
@@ -151,7 +152,7 @@
             this.audioPage.Name = "audioPage";
             this.audioPage.Size = new System.Drawing.Size(248, 121);
             this.audioPage.TabIndex = 2;
-            this.audioPage.Text = "Audio";
+            this.audioPage.Text = "音频";
             // 
             // winSoundBtn
             // 
@@ -164,7 +165,7 @@
             this.winSoundBtn.Name = "winSoundBtn";
             this.winSoundBtn.Size = new System.Drawing.Size(230, 40);
             this.winSoundBtn.TabIndex = 3;
-            this.winSoundBtn.Text = " Manage audio devices";
+            this.winSoundBtn.Text = "管理音频设备";
             this.winSoundBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.winSoundBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.winSoundBtn.UseVisualStyleBackColor = false;
@@ -181,7 +182,7 @@
             this.mixerBtn.Name = "mixerBtn";
             this.mixerBtn.Size = new System.Drawing.Size(230, 40);
             this.mixerBtn.TabIndex = 2;
-            this.mixerBtn.Text = " Open volume mixer";
+            this.mixerBtn.Text = "打开声音设置";
             this.mixerBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.mixerBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.mixerBtn.UseVisualStyleBackColor = false;
@@ -197,7 +198,7 @@
             this.updatesPage.Padding = new System.Windows.Forms.Padding(3);
             this.updatesPage.Size = new System.Drawing.Size(248, 121);
             this.updatesPage.TabIndex = 1;
-            this.updatesPage.Text = "Updates";
+            this.updatesPage.Text = "更新";
             // 
             // SettingsForm
             // 

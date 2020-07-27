@@ -199,7 +199,7 @@ namespace quick_screen_recorder
 			}
 			catch
 			{
-				MessageBox.Show("Something went wrong!", "Error");
+				MessageBox.Show("无法开始录制,请检查录制设置!", "Error");
 			}
 		}
 
@@ -210,8 +210,8 @@ namespace quick_screen_recorder
 			if (File.Exists(path))
 			{
 				DialogResult window = MessageBox.Show(
-					fileNameTextBox.Text + ".avi already exists.\nDo you want to replace it and start recording?",
-					"Warning",
+					fileNameTextBox.Text + ".avi 已经存在.\n是否想要继续录制并覆盖该文件?",
+					"警告",
 					MessageBoxButtons.YesNo,
 					MessageBoxIcon.Question
 				);
@@ -253,7 +253,7 @@ namespace quick_screen_recorder
 				string videoStr = videoStr = width + "x" + height + " (";
 				if (quality == 0)
 				{
-					videoStr += "Uncompressed";
+					videoStr += "无压缩";
 				}
 				else
 				{
@@ -273,7 +273,7 @@ namespace quick_screen_recorder
 			}
 			catch
 			{
-				MessageBox.Show("Something went wrong!", "Error");
+				MessageBox.Show("运行错误,请联系支持人员!", "Error");
 			}
 		}
 
@@ -438,7 +438,7 @@ namespace quick_screen_recorder
 
 			if (Properties.Settings.Default.CheckForUpdates)
 			{
-				UpdateManager.checkForUpdates(false, darkMode, this.TopMost, "ModuleArt", "quick-screen-recorder", "Quick Screen Recorder", "QuickScreenRecorder-Setup.msi");
+				//UpdateManager.checkForUpdates(false, darkMode, this.TopMost, "ModuleArt", "quick-screen-recorder", "Quick Screen Recorder", "QuickScreenRecorder-Setup.msi");
 			}
 		}
 
@@ -555,20 +555,20 @@ namespace quick_screen_recorder
 			{
 				if (Screen.AllScreens[i].Primary)
 				{
-					areaComboBox.Items.Add("Primary screen (" + Screen.AllScreens[i].Bounds.Width + "x" + Screen.AllScreens[i].Bounds.Height + ")");
+					areaComboBox.Items.Add("主屏幕 (" + Screen.AllScreens[i].Bounds.Width + "x" + Screen.AllScreens[i].Bounds.Height + ")");
 				}
 				else
 				{
-					areaComboBox.Items.Add("Screen " + (i + 1) + " (" + Screen.AllScreens[i].Bounds.Width + "x" + Screen.AllScreens[i].Bounds.Height + ")");
+					areaComboBox.Items.Add("主屏幕 " + (i + 1) + " (" + Screen.AllScreens[i].Bounds.Width + "x" + Screen.AllScreens[i].Bounds.Height + ")");
 				}
 			}
 
 			if (Screen.AllScreens.Length > 1)
 			{
-				areaComboBox.Items.Add("Everything");
+				areaComboBox.Items.Add("所有屏幕");
 			}
 
-			areaComboBox.Items.Add("Custom area");
+			areaComboBox.Items.Add("自定义区域");
 
 			areaComboBox.SelectedIndex = 0;
 

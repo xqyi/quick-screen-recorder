@@ -42,11 +42,9 @@ namespace quick_screen_recorder
 				this.ForeColor = Color.White;
 			}
 
-			updatesLink.LinkColor = ThemeManager.AccentColor;
+			
 			developerLink.LinkColor = ThemeManager.AccentColor;
-			projectLink.LinkColor = ThemeManager.AccentColor;
-			licenseLink.LinkColor = ThemeManager.AccentColor;
-			issuesLink.LinkColor = ThemeManager.AccentColor;
+
 
 			infoGroup.SetDarkMode(darkMode);
 			pagesGroup.SetDarkMode(darkMode);
@@ -54,7 +52,7 @@ namespace quick_screen_recorder
 
 		private void developerLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			Process.Start("https://github.com/ModuleArt/");
+			Process.Start("http://www.xiaoheiniao.com");
 		}
 
 		private void projectLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

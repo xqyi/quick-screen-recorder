@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Quick Screen Recorder")]
-[assembly: AssemblyDescription("Lightweight desktop screen recorder for Windows")]
+[assembly: AssemblyTitle("小黑鸟快录")]
+[assembly: AssemblyDescription("小黑鸟快录是一款快速录制视频和PPT等素材的专业AI工具")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Module Art")]
-[assembly: AssemblyProduct("Quick Screen Recorder")]
-[assembly: AssemblyCopyright("Copyright © 2020 Module Art")]
+[assembly: AssemblyCompany("北京飞鸟视界科技有限公司")]
+[assembly: AssemblyProduct("小黑鸟快录")]
+[assembly: AssemblyCopyright("Copyright © 2020 飞鸟视界")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,6 +32,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.2.1")]
-[assembly: AssemblyFileVersion("1.2.1")]
+[assembly: AssemblyVersion("1.0.0")]
+[assembly: AssemblyFileVersion("1.0.0")]
 [assembly: NeutralResourcesLanguage("en")]

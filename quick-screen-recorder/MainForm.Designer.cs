@@ -39,7 +39,6 @@
             this.qualityLabel = new System.Windows.Forms.Label();
             this.areaLabel = new System.Windows.Forms.Label();
             this.videoGroup = new QuickLibrary.QlibGroupBox();
-            this.refreshScreensBtn = new System.Windows.Forms.Button();
             this.hideTaskbarCheckBox = new QuickLibrary.QlibCheckBox();
             this.sizelabel = new System.Windows.Forms.Label();
             this.yNumeric = new QuickLibrary.QlibNumericBox();
@@ -52,20 +51,21 @@
             this.captureCursorCheckBox = new QuickLibrary.QlibCheckBox();
             this.inputDeviceLabel = new System.Windows.Forms.Label();
             this.audioGroup = new QuickLibrary.QlibGroupBox();
-            this.refreshAudioBtn = new System.Windows.Forms.Button();
             this.inputDeviceComboBox = new QuickLibrary.QlibComboBox();
             this.separateAudioCheckBox = new QuickLibrary.QlibCheckBox();
             this.generalGroup = new QuickLibrary.QlibGroupBox();
             this.aviLabel = new System.Windows.Forms.Label();
             this.updateTimer = new System.Windows.Forms.Timer(this.components);
-            this.recButton = new System.Windows.Forms.Button();
-            this.previewBox = new System.Windows.Forms.PictureBox();
             this.toolStrip1 = new QuickLibrary.QlibToolStrip();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.previewBox = new System.Windows.Forms.PictureBox();
             this.previewBtn = new System.Windows.Forms.ToolStripButton();
             this.onTopBtn = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.settingsBtn = new System.Windows.Forms.ToolStripButton();
             this.aboutBtn = new System.Windows.Forms.ToolStripButton();
+            this.refreshAudioBtn = new System.Windows.Forms.Button();
+            this.refreshScreensBtn = new System.Windows.Forms.Button();
+            this.recButton = new System.Windows.Forms.Button();
             this.videoGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.yNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xNumeric)).BeginInit();
@@ -73,8 +73,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.heightNumeric)).BeginInit();
             this.audioGroup.SuspendLayout();
             this.generalGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.previewBox)).BeginInit();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.previewBox)).BeginInit();
             this.SuspendLayout();
             // 
             // folderTextBox
@@ -99,7 +99,7 @@
             this.browseFolderBtn.Name = "browseFolderBtn";
             this.browseFolderBtn.Size = new System.Drawing.Size(69, 23);
             this.browseFolderBtn.TabIndex = 4;
-            this.browseFolderBtn.Text = "Browse";
+            this.browseFolderBtn.Text = "浏览";
             this.browseFolderBtn.UseVisualStyleBackColor = false;
             this.browseFolderBtn.Click += new System.EventHandler(this.browseFolderBtn_Click);
             // 
@@ -172,20 +172,6 @@
             this.videoGroup.TabIndex = 6;
             this.videoGroup.TabStop = false;
             this.videoGroup.Text = "录制视频配置";
-            // 
-            // refreshScreensBtn
-            // 
-            this.refreshScreensBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.refreshScreensBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.refreshScreensBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.refreshScreensBtn.Image = ((System.Drawing.Image)(resources.GetObject("refreshScreensBtn.Image")));
-            this.refreshScreensBtn.Location = new System.Drawing.Point(311, 52);
-            this.refreshScreensBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.refreshScreensBtn.Name = "refreshScreensBtn";
-            this.refreshScreensBtn.Size = new System.Drawing.Size(23, 23);
-            this.refreshScreensBtn.TabIndex = 9;
-            this.refreshScreensBtn.UseVisualStyleBackColor = false;
-            this.refreshScreensBtn.Click += new System.EventHandler(this.refreshScreensBtn_Click);
             // 
             // hideTaskbarCheckBox
             // 
@@ -276,11 +262,11 @@
             this.qualityComboBox.FormattingEnabled = true;
             this.qualityComboBox.IntegralHeight = false;
             this.qualityComboBox.Items.AddRange(new object[] {
-            "25% - Low (Motion JPEG)",
-            "50% - Medium (Motion JPEG)",
-            "75% - High (Motion JPEG)",
-            "100% - Original (Motion JPEG)",
-            "Uncompressed"});
+            "25% - 低",
+            "50% - 中",
+            "75% - 高",
+            "100% - 源品质",
+            "不压缩"});
             this.qualityComboBox.Location = new System.Drawing.Point(73, 22);
             this.qualityComboBox.Name = "qualityComboBox";
             this.qualityComboBox.Size = new System.Drawing.Size(261, 24);
@@ -359,20 +345,6 @@
             this.audioGroup.TabStop = false;
             this.audioGroup.Text = "音频设置";
             // 
-            // refreshAudioBtn
-            // 
-            this.refreshAudioBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.refreshAudioBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.refreshAudioBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.refreshAudioBtn.Image = ((System.Drawing.Image)(resources.GetObject("refreshAudioBtn.Image")));
-            this.refreshAudioBtn.Location = new System.Drawing.Point(311, 22);
-            this.refreshAudioBtn.Margin = new System.Windows.Forms.Padding(0);
-            this.refreshAudioBtn.Name = "refreshAudioBtn";
-            this.refreshAudioBtn.Size = new System.Drawing.Size(23, 23);
-            this.refreshAudioBtn.TabIndex = 18;
-            this.refreshAudioBtn.UseVisualStyleBackColor = false;
-            this.refreshAudioBtn.Click += new System.EventHandler(this.refreshBtn_Click);
-            // 
             // inputDeviceComboBox
             // 
             this.inputDeviceComboBox.BackColor = System.Drawing.SystemColors.Window;
@@ -382,8 +354,8 @@
             this.inputDeviceComboBox.FormattingEnabled = true;
             this.inputDeviceComboBox.IntegralHeight = false;
             this.inputDeviceComboBox.Items.AddRange(new object[] {
-            "None",
-            "System sounds (Soundcard)"});
+            "无",
+            "系统声音（声卡）"});
             this.inputDeviceComboBox.Location = new System.Drawing.Point(73, 22);
             this.inputDeviceComboBox.Name = "inputDeviceComboBox";
             this.inputDeviceComboBox.Size = new System.Drawing.Size(231, 24);
@@ -425,38 +397,6 @@
             this.aviLabel.TabIndex = 26;
             this.aviLabel.Text = ".avi";
             // 
-            // recButton
-            // 
-            this.recButton.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.recButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.recButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.recButton.Image = ((System.Drawing.Image)(resources.GetObject("recButton.Image")));
-            this.recButton.Location = new System.Drawing.Point(9, 9);
-            this.recButton.Margin = new System.Windows.Forms.Padding(0);
-            this.recButton.Name = "recButton";
-            this.recButton.Size = new System.Drawing.Size(140, 40);
-            this.recButton.TabIndex = 0;
-            this.recButton.Text = "开始录制 (Alt+R)";
-            this.recButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.recButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.recButton.UseVisualStyleBackColor = false;
-            this.recButton.Click += new System.EventHandler(this.recButton_Click);
-            // 
-            // previewBox
-            // 
-            this.previewBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.previewBox.BackColor = System.Drawing.Color.Black;
-            this.previewBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.previewBox.Location = new System.Drawing.Point(358, 9);
-            this.previewBox.Margin = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.previewBox.Name = "previewBox";
-            this.previewBox.Size = new System.Drawing.Size(487, 375);
-            this.previewBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.previewBox.TabIndex = 26;
-            this.previewBox.TabStop = false;
-            // 
             // toolStrip1
             // 
             this.toolStrip1.BackColor = System.Drawing.SystemColors.Control;
@@ -478,6 +418,28 @@
             this.toolStrip1.TabStop = true;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.AutoSize = false;
+            this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(2, 16);
+            // 
+            // previewBox
+            // 
+            this.previewBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.previewBox.BackColor = System.Drawing.Color.Black;
+            this.previewBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.previewBox.Location = new System.Drawing.Point(358, 9);
+            this.previewBox.Margin = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.previewBox.Name = "previewBox";
+            this.previewBox.Size = new System.Drawing.Size(487, 375);
+            this.previewBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.previewBox.TabIndex = 26;
+            this.previewBox.TabStop = false;
+            // 
             // previewBtn
             // 
             this.previewBtn.AutoSize = false;
@@ -488,8 +450,8 @@
             this.previewBtn.Margin = new System.Windows.Forms.Padding(0);
             this.previewBtn.Name = "previewBtn";
             this.previewBtn.Size = new System.Drawing.Size(24, 25);
-            this.previewBtn.Text = "Preview | Ctrl + P";
-            this.previewBtn.ToolTipText = "Preview | Ctrl + P";
+            this.previewBtn.Text = "预览 | Ctrl + P";
+            this.previewBtn.ToolTipText = "预览 | Ctrl + P";
             this.previewBtn.CheckedChanged += new System.EventHandler(this.previewBtn_CheckedChanged);
             // 
             // onTopBtn
@@ -502,16 +464,9 @@
             this.onTopBtn.Margin = new System.Windows.Forms.Padding(0);
             this.onTopBtn.Name = "onTopBtn";
             this.onTopBtn.Size = new System.Drawing.Size(24, 25);
-            this.onTopBtn.Text = "Always on top | Ctrl + T";
-            this.onTopBtn.ToolTipText = "Always on top | Ctrl+T";
+            this.onTopBtn.Text = "窗口置顶 | Ctrl + T";
+            this.onTopBtn.ToolTipText = "窗口置顶 | Ctrl+T";
             this.onTopBtn.CheckedChanged += new System.EventHandler(this.onTopCheckBox_CheckedChanged);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.AutoSize = false;
-            this.toolStripSeparator1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(2, 16);
             // 
             // settingsBtn
             // 
@@ -522,8 +477,8 @@
             this.settingsBtn.Margin = new System.Windows.Forms.Padding(0);
             this.settingsBtn.Name = "settingsBtn";
             this.settingsBtn.Size = new System.Drawing.Size(24, 25);
-            this.settingsBtn.Text = "About | F1";
-            this.settingsBtn.ToolTipText = "Settings | Ctrl+Comma";
+            this.settingsBtn.Text = "设置";
+            this.settingsBtn.ToolTipText = "设置";
             this.settingsBtn.Click += new System.EventHandler(this.settingsBtn_Click);
             // 
             // aboutBtn
@@ -535,8 +490,54 @@
             this.aboutBtn.Margin = new System.Windows.Forms.Padding(0);
             this.aboutBtn.Name = "aboutBtn";
             this.aboutBtn.Size = new System.Drawing.Size(24, 25);
-            this.aboutBtn.Text = "About | F1";
+            this.aboutBtn.Text = "关于 | F1";
+            this.aboutBtn.ToolTipText = "关于 | F1";
             this.aboutBtn.Click += new System.EventHandler(this.aboutBtn_Click);
+            // 
+            // refreshAudioBtn
+            // 
+            this.refreshAudioBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.refreshAudioBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.refreshAudioBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refreshAudioBtn.Image = ((System.Drawing.Image)(resources.GetObject("refreshAudioBtn.Image")));
+            this.refreshAudioBtn.Location = new System.Drawing.Point(311, 22);
+            this.refreshAudioBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.refreshAudioBtn.Name = "refreshAudioBtn";
+            this.refreshAudioBtn.Size = new System.Drawing.Size(23, 23);
+            this.refreshAudioBtn.TabIndex = 18;
+            this.refreshAudioBtn.UseVisualStyleBackColor = false;
+            this.refreshAudioBtn.Click += new System.EventHandler(this.refreshBtn_Click);
+            // 
+            // refreshScreensBtn
+            // 
+            this.refreshScreensBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.refreshScreensBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.refreshScreensBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refreshScreensBtn.Image = ((System.Drawing.Image)(resources.GetObject("refreshScreensBtn.Image")));
+            this.refreshScreensBtn.Location = new System.Drawing.Point(311, 52);
+            this.refreshScreensBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.refreshScreensBtn.Name = "refreshScreensBtn";
+            this.refreshScreensBtn.Size = new System.Drawing.Size(23, 23);
+            this.refreshScreensBtn.TabIndex = 9;
+            this.refreshScreensBtn.UseVisualStyleBackColor = false;
+            this.refreshScreensBtn.Click += new System.EventHandler(this.refreshScreensBtn_Click);
+            // 
+            // recButton
+            // 
+            this.recButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.recButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.recButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.recButton.Image = ((System.Drawing.Image)(resources.GetObject("recButton.Image")));
+            this.recButton.Location = new System.Drawing.Point(9, 9);
+            this.recButton.Margin = new System.Windows.Forms.Padding(0);
+            this.recButton.Name = "recButton";
+            this.recButton.Size = new System.Drawing.Size(140, 40);
+            this.recButton.TabIndex = 0;
+            this.recButton.Text = "开始录制 (Alt+R)";
+            this.recButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.recButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.recButton.UseVisualStyleBackColor = false;
+            this.recButton.Click += new System.EventHandler(this.recButton_Click);
             // 
             // MainForm
             // 
@@ -556,7 +557,7 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quick Screen Recorder";
+            this.Text = "小黑鸟快录";
             this.TransparencyKey = System.Drawing.Color.MediumBlue;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -571,9 +572,9 @@
             this.audioGroup.PerformLayout();
             this.generalGroup.ResumeLayout(false);
             this.generalGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.previewBox)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.previewBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
