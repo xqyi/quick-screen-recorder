@@ -26,9 +26,7 @@ C:\Users\xqyi\Source\Repos\quick-screen-recorder\quick-screen-recorder\bin\Relea
 C:\Users\xqyi\Source\Repos\quick-screen-recorder\quick-screen-recorder\bin\Release\Octokit.dll
 C:\Users\xqyi\Source\Repos\quick-screen-recorder\quick-screen-recorder\bin\Release\SharpAvi.dll
 C:\Users\xqyi\Source\Repos\quick-screen-recorder\quick-screen-recorder\bin\Release\NAudio.xml
-C:\Users\xqyi\Source\Repos\quick-screen-recorder\quick-screen-recorder\bin\Release\QuickLibrary.pdb
 C:\Users\xqyi\Source\Repos\quick-screen-recorder\quick-screen-recorder\bin\Release\SharpAvi.xml
-C:\Users\xqyi\Source\Repos\quick-screen-recorder\quick-screen-recorder\obj\Release\quick-screen-recorder.csprojAssemblyReference.cache
 C:\Users\xqyi\Source\Repos\quick-screen-recorder\quick-screen-recorder\obj\Release\quick_screen_recorder.AboutForm.resources
 C:\Users\xqyi\Source\Repos\quick-screen-recorder\quick-screen-recorder\obj\Release\quick_screen_recorder.AreaForm.resources
 C:\Users\xqyi\Source\Repos\quick-screen-recorder\quick-screen-recorder\obj\Release\quick_screen_recorder.MainForm.resources

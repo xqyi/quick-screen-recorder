@@ -79,12 +79,12 @@ namespace quick_screen_recorder
             if (quality == 0)
             {
                 videoStream = writer.AddUncompressedVideoStream(width, height);
-                videoStream.Name = "Quick Screen Recorder - Motion JPEG video stream";
+                videoStream.Name = "小黑鸟快录 - 动态JPEG视频流";
             }
             else
             {
                 videoStream = writer.AddMotionJpegVideoStream(width, height, quality);
-                videoStream.Name = "Quick Screen Recorder - Motion JPEG video stream";
+                videoStream.Name = "小黑鸟快录 - 动态JPEG视频流";
             }
 
             if (inputSourceIndex >= 0)
@@ -96,7 +96,7 @@ namespace quick_screen_recorder
                     samplesPerSecond: waveFormat.SampleRate,
                     bitsPerSample: waveFormat.BitsPerSample
                 );
-                audioStream.Name = "Quick Screen Recorder - Input audio stream";
+                audioStream.Name = "小黑鸟快录 - 输入音频流";
 
                 audioSource = new WaveInEvent()
                 {
@@ -121,7 +121,7 @@ namespace quick_screen_recorder
                     samplesPerSecond: audioSource.WaveFormat.SampleRate,
                     bitsPerSample: audioSource.WaveFormat.BitsPerSample
                 );
-                audioStream.Name = "Quick Screen Recorder - System sounds audio stream";
+                audioStream.Name = "小黑鸟快录 - 系统声音音频流";
 
                 audioSource.DataAvailable += audioSource_DataAvailable;
 

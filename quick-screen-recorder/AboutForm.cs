@@ -68,7 +68,7 @@ namespace quick_screen_recorder
 		private void updatesLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
 			MainForm parent = (MainForm)this.Owner;
-			UpdateManager.checkForUpdates(true, darkMode, this.TopMost, "ModuleArt", "quick-screen-recorder", "Quick Screen Recorder", "QuickScreenRecorder-Setup.msi");
+			//UpdateManager.checkForUpdates(true, darkMode, this.TopMost, "ModuleArt", "quick-screen-recorder", "Quick Screen Recorder", "QuickScreenRecorder-Setup.msi");
 			this.Close();
 		}
 

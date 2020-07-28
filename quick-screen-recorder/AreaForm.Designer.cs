@@ -79,7 +79,7 @@
             this.Name = "AreaForm";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Recording area - Quick Screen Recorder";
+            this.Text = "录制区域 - 小黑鸟快录";
             this.TransparencyKey = System.Drawing.Color.MediumBlue;
             this.Load += new System.EventHandler(this.AreaForm_Load);
             this.ResizeEnd += new System.EventHandler(this.AreaForm_ResizeEnd);
