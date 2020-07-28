@@ -32,17 +32,14 @@
             this.darkThemeRadio = new QuickLibrary.QlibRadioButton();
             this.lightThemeRadio = new QuickLibrary.QlibRadioButton();
             this.systemThemeRadio = new QuickLibrary.QlibRadioButton();
-            this.updatesCheckBox = new QuickLibrary.QlibCheckBox();
             this.settingsTabs = new QuickLibrary.QlibTabControl();
             this.themePage = new System.Windows.Forms.TabPage();
             this.audioPage = new System.Windows.Forms.TabPage();
             this.winSoundBtn = new System.Windows.Forms.Button();
             this.mixerBtn = new System.Windows.Forms.Button();
-            this.updatesPage = new System.Windows.Forms.TabPage();
             this.settingsTabs.SuspendLayout();
             this.themePage.SuspendLayout();
             this.audioPage.SuspendLayout();
-            this.updatesPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // licenseLabel
@@ -90,17 +87,6 @@
             this.systemThemeRadio.UseVisualStyleBackColor = true;
             this.systemThemeRadio.CheckedChanged += new System.EventHandler(this.systemThemeRadio_CheckedChanged);
             // 
-            // updatesCheckBox
-            // 
-            this.updatesCheckBox.Location = new System.Drawing.Point(9, 9);
-            this.updatesCheckBox.Margin = new System.Windows.Forms.Padding(9);
-            this.updatesCheckBox.Name = "updatesCheckBox";
-            this.updatesCheckBox.Size = new System.Drawing.Size(202, 19);
-            this.updatesCheckBox.TabIndex = 0;
-            this.updatesCheckBox.Text = "Check for updates on app startup";
-            this.updatesCheckBox.UseVisualStyleBackColor = true;
-            this.updatesCheckBox.CheckedChanged += new System.EventHandler(this.updatesCheckBox_CheckedChanged);
-            // 
             // settingsTabs
             // 
             this.settingsTabs.ActiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
@@ -111,7 +97,6 @@
             this.settingsTabs.ClosingMessage = null;
             this.settingsTabs.Controls.Add(this.themePage);
             this.settingsTabs.Controls.Add(this.audioPage);
-            this.settingsTabs.Controls.Add(this.updatesPage);
             this.settingsTabs.HeaderColor = System.Drawing.SystemColors.ControlLight;
             this.settingsTabs.HorizontalLineColor = System.Drawing.Color.Transparent;
             this.settingsTabs.ItemSize = new System.Drawing.Size(240, 16);
@@ -125,7 +110,6 @@
             this.settingsTabs.Size = new System.Drawing.Size(256, 145);
             this.settingsTabs.TabIndex = 13;
             this.settingsTabs.TextColor = System.Drawing.Color.Black;
-            this.settingsTabs.Visible = false;
             // 
             // themePage
             // 
@@ -188,18 +172,6 @@
             this.mixerBtn.UseVisualStyleBackColor = false;
             this.mixerBtn.Click += new System.EventHandler(this.mixerBtn_Click);
             // 
-            // updatesPage
-            // 
-            this.updatesPage.BackColor = System.Drawing.Color.White;
-            this.updatesPage.Controls.Add(this.updatesCheckBox);
-            this.updatesPage.Location = new System.Drawing.Point(4, 20);
-            this.updatesPage.Margin = new System.Windows.Forms.Padding(0);
-            this.updatesPage.Name = "updatesPage";
-            this.updatesPage.Padding = new System.Windows.Forms.Padding(3);
-            this.updatesPage.Size = new System.Drawing.Size(248, 121);
-            this.updatesPage.TabIndex = 1;
-            this.updatesPage.Text = "更新";
-            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -216,13 +188,12 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Settings";
+            this.Text = "设置";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SettingsForm_KeyDown);
             this.settingsTabs.ResumeLayout(false);
             this.themePage.ResumeLayout(false);
             this.themePage.PerformLayout();
             this.audioPage.ResumeLayout(false);
-            this.updatesPage.ResumeLayout(false);
             this.ResumeLayout(false);
 
 		}
@@ -231,11 +202,9 @@
 		private QuickLibrary.QlibRadioButton lightThemeRadio;
 		private QuickLibrary.QlibRadioButton systemThemeRadio;
 		private QuickLibrary.QlibRadioButton darkThemeRadio;
-		private QuickLibrary.QlibCheckBox updatesCheckBox;
 		private System.Windows.Forms.Label licenseLabel;
 		private QuickLibrary.QlibTabControl settingsTabs;
 		private System.Windows.Forms.TabPage themePage;
-		private System.Windows.Forms.TabPage updatesPage;
 		private System.Windows.Forms.TabPage audioPage;
 		private System.Windows.Forms.Button mixerBtn;
 		private System.Windows.Forms.Button winSoundBtn;

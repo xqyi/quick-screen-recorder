@@ -39,7 +39,7 @@ namespace quick_screen_recorder
 			systemThemeRadio.SetDarkMode(darkMode);
 			darkThemeRadio.SetDarkMode(darkMode);
 			lightThemeRadio.SetDarkMode(darkMode);
-			updatesCheckBox.SetDarkMode(darkMode);
+			//updatesCheckBox.SetDarkMode(darkMode);
 
 			int theme = Properties.Settings.Default.Theme;
 			if (theme == 0)
@@ -55,7 +55,7 @@ namespace quick_screen_recorder
 				darkThemeRadio.Checked = true;
 			}
 
-			updatesCheckBox.Checked = Properties.Settings.Default.CheckForUpdates;
+			//updatesCheckBox.Checked = Properties.Settings.Default.CheckForUpdates;
 		}
 
 		private void SettingsForm_KeyDown(object sender, KeyEventArgs e)
@@ -66,11 +66,11 @@ namespace quick_screen_recorder
 			}
 		}
 
-		private void updatesCheckBox_CheckedChanged(object sender, EventArgs e)
+		/*private void updatesCheckBox_CheckedChanged(object sender, EventArgs e)
 		{
 			Properties.Settings.Default.CheckForUpdates = updatesCheckBox.Checked;
 			Properties.Settings.Default.Save();
-		}
+		}*/
 
 		private void systemThemeRadio_CheckedChanged(object sender, EventArgs e)
 		{
